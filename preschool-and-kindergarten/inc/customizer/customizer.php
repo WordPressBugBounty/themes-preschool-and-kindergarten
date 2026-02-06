@@ -7,41 +7,49 @@
  *
  * @param WP_Customize_Manager $wp_customize Theme Customizer object.
  */
+
+/**
+ * Initialize customizer options - runs on customize_register to ensure post types are registered
+ */
+function preschool_and_kindergarten_init_customizer_options() {
+    global $preschool_and_kindergarten_options_posts, $preschool_and_kindergarten_options_pages, $preschool_and_kindergarten_option_categories;
+    
+    /* Option list of all post */	
+    $preschool_and_kindergarten_options_posts = array();
+    $preschool_and_kindergarten_options_posts_obj = get_posts('posts_per_page=-1');
+    $preschool_and_kindergarten_options_posts[''] = __( 'Choose Post', 'preschool-and-kindergarten' );
+    foreach ( $preschool_and_kindergarten_options_posts_obj as $psk_posts ) {
+        $preschool_and_kindergarten_options_posts[$psk_posts->ID] = $psk_posts->post_title;
+    }
+
+    /** Option list of all pages */ 
+    $preschool_and_kindergarten_options_pages = array();
+    $preschool_and_kindergarten_options_pages_obj = get_posts('posts_per_page=-1&post_type=page');
+    $preschool_and_kindergarten_options_pages[''] = __( 'Choose Page', 'preschool-and-kindergarten' );
+    foreach ( $preschool_and_kindergarten_options_pages_obj as $psk_pages ) {
+        $preschool_and_kindergarten_options_pages[$psk_pages->ID] = $psk_pages->post_title; 
+    }
+
+    /* Option list of all categories */
+    $args = array(
+        'type'                     => 'post',
+        'orderby'                  => 'name',
+        'order'                    => 'ASC',
+        'hide_empty'               => 1,
+        'hierarchical'             => 1,
+        'taxonomy'                 => 'category'
+    ); 
+    $preschool_and_kindergarten_option_categories = array();
+    $category_lists = get_categories( $args );
+    $preschool_and_kindergarten_option_categories[''] = __( 'Choose Category', 'preschool-and-kindergarten' );
+    foreach( $category_lists as $category ){
+        $preschool_and_kindergarten_option_categories[$category->term_id] = $category->name;
+    }  
+}   
+add_action( 'customize_register', 'preschool_and_kindergarten_init_customizer_options', 1 );
  
 $preschool_and_kindergarten_sections = array( 'banners', 'about', 'lessons', 'services', 'promotional', 'program', 'testimonials', 'staff', 'news' );
 $preschool_and_kindergarten_settings = array( 'default', 'header', 'home', 'breadcrumb', 'social', 'footer', 'custom' );
-
-/* Option list of all post */	
-$preschool_and_kindergarten_options_posts = array();
-$preschool_and_kindergarten_options_posts_obj = get_posts('posts_per_page=-1');
-$preschool_and_kindergarten_options_posts[''] = __( 'Choose Post', 'preschool-and-kindergarten' );
-foreach ( $preschool_and_kindergarten_options_posts_obj as $psk_posts ) {
-    $preschool_and_kindergarten_options_posts[$psk_posts->ID] = $psk_posts->post_title;
-}
-
-/** Option list of all pages */ 
-$preschool_and_kindergarten_options_pages = array();
-$preschool_and_kindergarten_options_pages_obj = get_posts('posts_per_page=-1&post_type=page');
-$preschool_and_kindergarten_options_pages[''] = __( 'Choose Page', 'preschool-and-kindergarten' );
-foreach ( $preschool_and_kindergarten_options_pages_obj as $psk_pages ) {
-    $preschool_and_kindergarten_options_pages[$psk_pages->ID] = $psk_pages->post_title; 
-}
-
-/* Option list of all categories */
-$args = array(
-    'type'                     => 'post',
-    'orderby'                  => 'name',
-    'order'                    => 'ASC',
-    'hide_empty'               => 1,
-    'hierarchical'             => 1,
-    'taxonomy'                 => 'category'
-); 
-$preschool_and_kindergarten_option_categories = array();
-$category_lists = get_categories( $args );
-$preschool_and_kindergarten_option_categories[''] = __( 'Choose Category', 'preschool-and-kindergarten' );
-foreach( $category_lists as $category ){
-    $preschool_and_kindergarten_option_categories[$category->term_id] = $category->name;
-}    
 
 foreach( $preschool_and_kindergarten_settings as $setting ){
     require get_template_directory() . '/inc/customizer/' . $setting . '.php';

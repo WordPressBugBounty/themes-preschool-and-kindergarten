@@ -1,37 +1,42 @@
-# Copyright (C) 2024 Rara Theme
+# Copyright (C) 2026 Rara Theme
 # This file is distributed under the GNU General Public License v2 or later.
 msgid ""
 msgstr ""
-"Project-Id-Version: Preschool and Kindergarten 1.2.4\n"
+"Project-Id-Version: Preschool and Kindergarten 1.2.5\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/theme/preschool-and-kindergarten\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"POT-Creation-Date: 2024-09-30T07:29:03+00:00\n"
+"POT-Creation-Date: 2026-01-19T11:35:08+00:00\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"X-Generator: WP-CLI 2.10.0\n"
+"X-Generator: WP-CLI 2.12.0\n"
 "X-Domain: preschool-and-kindergarten\n"
 
 #. Theme Name of the theme
+#: style.css
 msgid "Preschool and Kindergarten"
 msgstr ""
 
 #. Theme URI of the theme
+#: style.css
 msgid "https://rarathemes.com/wordpress-themes/preschool-and-kindergarten/"
 msgstr ""
 
 #. Description of the theme
+#: style.css
 msgid "Preschool and Kindergarten is a beautiful educational WordPress theme suitable for Kindergarten, Schools, Elementary, Primary Schools, Universities, Academy, Secondary School, LMS, Training Center and Educational institutions. Preschool and Kindergarten is also suitable for education and children activities. It is mobile responsive and translation ready. The theme is very flexible and versatile. In other words, it is multipurpose theme. It can be used to build various types of websites for business, corporate, charity, food, recipe, travel, photography, feminine, lifestyle, events, etc. The theme is highly customizable with various features and personalization options. Preschool and Kindergarten comes with several features to make a user-friendly, interactive and visually stunning website. Such features include custom menu, attractive slider, about section, courses section, testimonial section, featured programs, Banner with Call to Action Button (CTA), and social media. The theme is SEO friendly with optimized codes, which make it easy for your site to rank on Google and other search engines. The theme is properly tested and optimized for speed and faster page load time and has a secure and clean code. The theme is also translation ready. Designed with visitor engagement in mind, Preschool and Kindergarten theme helps you to easily and intuitively create professional and appealing websites. If your preschool, kindergarten, school, college or university needs an online home that is dynamic and multi-functional, Preschool and Kindergarten theme is a good place to start. Check the demo at https://rarathemes.com/previews/?theme=preschool-and-kindergarten, documentation at https://docs.rarathemes.com/docs/preschool-and-kindergarten/, and get support at https://rarathemes.com/support-ticket/."
 msgstr ""
 
 #. Author of the theme
+#: style.css
 #: inc/template-functions.php:501
 msgid "Rara Theme"
 msgstr ""
 
 #. Author URI of the theme
+#: style.css
 msgid "https://rarathemes.com/"
 msgstr ""
 
@@ -44,6 +49,7 @@ msgid "It looks like nothing was found at this location. Maybe try one of the li
 msgstr ""
 
 #: comments.php:31
+#, php-format
 msgctxt "comments title"
 msgid "%1$s Comment"
 msgid_plural "%1$s Comments"
@@ -129,6 +135,7 @@ msgid "Congratulations!"
 msgstr ""
 
 #: inc/custom-functions.php:411
+#, php-format
 msgid "%1$s is now installed and ready to use. Click below to see theme documentation, plugins to install and other details to get started."
 msgstr ""
 
@@ -154,7 +161,7 @@ msgstr ""
 
 #: inc/customizer/breadcrumb.php:59
 #: inc/extras.php:122
-#: build/dashboard.js:6881
+#: build/dashboard.js:10170
 #: src/pages/index.js:16
 msgid "Home"
 msgstr ""
@@ -184,19 +191,19 @@ msgstr ""
 msgid "Put your custom CSS"
 msgstr ""
 
-#: inc/customizer/customizer.php:17
+#: inc/customizer/customizer.php:20
 msgid "Choose Post"
 msgstr ""
 
-#: inc/customizer/customizer.php:25
+#: inc/customizer/customizer.php:28
 msgid "Choose Page"
 msgstr ""
 
-#: inc/customizer/customizer.php:41
+#: inc/customizer/customizer.php:44
 msgid "Choose Category"
 msgstr ""
 
-#: inc/customizer/customizer.php:77
+#: inc/customizer/customizer.php:85
 msgid "Successfully Flushed!"
 msgstr ""
 
@@ -209,7 +216,7 @@ msgid "Default section provided by wordpress customizer"
 msgstr ""
 
 #: inc/customizer/default.php:25
-#: build/dashboard.js:6457
+#: build/dashboard.js:9746
 #: src/pages/Home/index.jsx:65
 msgid "Typography Settings"
 msgstr ""
@@ -236,7 +243,7 @@ msgid "Static Front Page"
 msgstr ""
 
 #: inc/customizer/footer.php:14
-#: build/dashboard.js:6436
+#: build/dashboard.js:9725
 #: src/pages/Home/index.jsx:38
 msgid "Footer Settings"
 msgstr ""
@@ -246,7 +253,7 @@ msgid "Copyright Info"
 msgstr ""
 
 #: inc/customizer/header.php:14
-#: build/dashboard.js:6415
+#: build/dashboard.js:9704
 #: src/pages/Home/index.jsx:20
 msgid "Header Settings"
 msgstr ""
@@ -260,7 +267,7 @@ msgid "Phone Number"
 msgstr ""
 
 #: inc/customizer/home.php:16
-#: build/dashboard.js:6422
+#: build/dashboard.js:9711
 #: src/pages/Home/index.jsx:26
 msgid "Home Page Settings"
 msgstr ""
@@ -626,11 +633,13 @@ msgid "Sorry, you are not allowed to do that."
 msgstr ""
 
 #: inc/extras.php:22
+#, php-format
 msgctxt "post date"
 msgid "On %s"
 msgstr ""
 
 #: inc/extras.php:27
+#, php-format
 msgctxt "post author"
 msgid "By %s"
 msgstr ""
@@ -642,16 +651,19 @@ msgid ", "
 msgstr ""
 
 #: inc/extras.php:38
+#, php-format
 msgid "In %1$s"
 msgstr ""
 
 #. translators: %s: post title
 #: inc/extras.php:45
+#, php-format
 msgid "Leave a Comment<span class=\"screen-reader-text\"> on %s</span>"
 msgstr ""
 
 #. translators: %s: Name of current post
 #: inc/extras.php:71
+#, php-format
 msgid "Edit %s"
 msgstr ""
 
@@ -685,6 +697,7 @@ msgid "\""
 msgstr ""
 
 #: inc/extras.php:327
+#, php-format
 msgid "Page %s"
 msgstr ""
 
@@ -807,15 +820,15 @@ msgstr ""
 msgid "Sidebar Layout"
 msgstr ""
 
-#: inc/metabox.php:24
+#: inc/metabox.php:32
 msgid "Right Sidebar (default)"
 msgstr ""
 
-#: inc/metabox.php:29
+#: inc/metabox.php:37
 msgid "No Sidebar"
 msgstr ""
 
-#: inc/metabox.php:41
+#: inc/metabox.php:53
 msgid "Choose Sidebar Template"
 msgstr ""
 
@@ -828,6 +841,7 @@ msgid "Mobile"
 msgstr ""
 
 #: inc/template-functions.php:278
+#, php-format
 msgid "Search Results for: %s"
 msgstr ""
 
@@ -836,6 +850,7 @@ msgid "404 - Page not found"
 msgstr ""
 
 #: inc/template-functions.php:400
+#, php-format
 msgid "Posted by %s"
 msgstr ""
 
@@ -848,6 +863,7 @@ msgid "Preschool and Kindergarten | Developed By "
 msgstr ""
 
 #: inc/template-functions.php:502
+#, php-format
 msgid "Powered by %s"
 msgstr ""
 
@@ -865,11 +881,13 @@ msgstr ""
 
 #. translators: %s: plugin name.
 #: inc/tgmpa/class-tgm-plugin-activation.php:343
+#, php-format
 msgid "Installing Plugin: %s"
 msgstr ""
 
 #. translators: %s: plugin name.
 #: inc/tgmpa/class-tgm-plugin-activation.php:345
+#, php-format
 msgid "Updating Plugin: %s"
 msgstr ""
 
@@ -879,6 +897,7 @@ msgstr ""
 
 #. translators: 1: plugin name(s).
 #: inc/tgmpa/class-tgm-plugin-activation.php:348
+#, php-format
 msgid "This theme requires the following plugin: %1$s."
 msgid_plural "This theme requires the following plugins: %1$s."
 msgstr[0] ""
@@ -886,6 +905,7 @@ msgstr[1] ""
 
 #. translators: 1: plugin name(s).
 #: inc/tgmpa/class-tgm-plugin-activation.php:354
+#, php-format
 msgid "This theme recommends the following plugin: %1$s."
 msgid_plural "This theme recommends the following plugins: %1$s."
 msgstr[0] ""
@@ -893,6 +913,7 @@ msgstr[1] ""
 
 #. translators: 1: plugin name(s).
 #: inc/tgmpa/class-tgm-plugin-activation.php:360
+#, php-format
 msgid "The following plugin needs to be updated to its latest version to ensure maximum compatibility with this theme: %1$s."
 msgid_plural "The following plugins need to be updated to their latest version to ensure maximum compatibility with this theme: %1$s."
 msgstr[0] ""
@@ -900,6 +921,7 @@ msgstr[1] ""
 
 #. translators: 1: plugin name(s).
 #: inc/tgmpa/class-tgm-plugin-activation.php:366
+#, php-format
 msgid "There is an update available for: %1$s."
 msgid_plural "There are updates available for the following plugins: %1$s."
 msgstr[0] ""
@@ -907,6 +929,7 @@ msgstr[1] ""
 
 #. translators: 1: plugin name(s).
 #: inc/tgmpa/class-tgm-plugin-activation.php:372
+#, php-format
 msgid "The following required plugin is currently inactive: %1$s."
 msgid_plural "The following required plugins are currently inactive: %1$s."
 msgstr[0] ""
@@ -914,6 +937,7 @@ msgstr[1] ""
 
 #. translators: 1: plugin name(s).
 #: inc/tgmpa/class-tgm-plugin-activation.php:378
+#, php-format
 msgid "The following recommended plugin is currently inactive: %1$s."
 msgid_plural "The following recommended plugins are currently inactive: %1$s."
 msgstr[0] ""
@@ -959,16 +983,19 @@ msgstr[1] ""
 
 #. translators: 1: plugin name.
 #: inc/tgmpa/class-tgm-plugin-activation.php:403
+#, php-format
 msgid "No action taken. Plugin %1$s was already active."
 msgstr ""
 
 #. translators: 1: plugin name.
 #: inc/tgmpa/class-tgm-plugin-activation.php:405
+#, php-format
 msgid "Plugin not activated. A higher version of %s is needed for this theme. Please update the plugin."
 msgstr ""
 
 #. translators: 1: dashboard link.
 #: inc/tgmpa/class-tgm-plugin-activation.php:407
+#, php-format
 msgid "All plugins installed and activated successfully. %1$s"
 msgstr ""
 
@@ -1017,6 +1044,7 @@ msgstr ""
 
 #. translators: %s: version number
 #: inc/tgmpa/class-tgm-plugin-activation.php:2112
+#, php-format
 msgid "TGMPA v%s"
 msgstr ""
 
@@ -1066,12 +1094,14 @@ msgstr ""
 
 #. translators: 1: install status, 2: update status
 #: inc/tgmpa/class-tgm-plugin-activation.php:2490
+#, php-format
 msgctxt "Install/Update Status"
 msgid "%1$s, %2$s"
 msgstr ""
 
 #. translators: 1: number of plugins.
 #: inc/tgmpa/class-tgm-plugin-activation.php:2536
+#, php-format
 msgctxt "plugins"
 msgid "All <span class=\"count\">(%s)</span>"
 msgid_plural "All <span class=\"count\">(%s)</span>"
@@ -1080,6 +1110,7 @@ msgstr[1] ""
 
 #. translators: 1: number of plugins.
 #: inc/tgmpa/class-tgm-plugin-activation.php:2540
+#, php-format
 msgid "To Install <span class=\"count\">(%s)</span>"
 msgid_plural "To Install <span class=\"count\">(%s)</span>"
 msgstr[0] ""
@@ -1087,6 +1118,7 @@ msgstr[1] ""
 
 #. translators: 1: number of plugins.
 #: inc/tgmpa/class-tgm-plugin-activation.php:2544
+#, php-format
 msgid "Update Available <span class=\"count\">(%s)</span>"
 msgid_plural "Update Available <span class=\"count\">(%s)</span>"
 msgstr[0] ""
@@ -1094,6 +1126,7 @@ msgstr[1] ""
 
 #. translators: 1: number of plugins.
 #: inc/tgmpa/class-tgm-plugin-activation.php:2548
+#, php-format
 msgid "To Activate <span class=\"count\">(%s)</span>"
 msgid_plural "To Activate <span class=\"count\">(%s)</span>"
 msgstr[0] ""
@@ -1142,16 +1175,19 @@ msgstr ""
 
 #. translators: %2$s: plugin name in screen reader markup
 #: inc/tgmpa/class-tgm-plugin-activation.php:2751
+#, php-format
 msgid "Install %2$s"
 msgstr ""
 
 #. translators: %2$s: plugin name in screen reader markup
 #: inc/tgmpa/class-tgm-plugin-activation.php:2756
+#, php-format
 msgid "Update %2$s"
 msgstr ""
 
 #. translators: %2$s: plugin name in screen reader markup
 #: inc/tgmpa/class-tgm-plugin-activation.php:2762
+#, php-format
 msgid "Activate %2$s"
 msgstr ""
 
@@ -1160,7 +1196,7 @@ msgid "Upgrade message from the plugin author:"
 msgstr ""
 
 #: inc/tgmpa/class-tgm-plugin-activation.php:2867
-#: build/dashboard.js:6829
+#: build/dashboard.js:10118
 #: src/pages/UsefulPlugins/index.jsx:146
 msgid "Install"
 msgstr ""
@@ -1170,7 +1206,7 @@ msgid "Update"
 msgstr ""
 
 #: inc/tgmpa/class-tgm-plugin-activation.php:2876
-#: build/dashboard.js:6835
+#: build/dashboard.js:10124
 #: src/pages/UsefulPlugins/index.jsx:156
 msgid "Activate"
 msgstr ""
@@ -1205,16 +1241,19 @@ msgstr ""
 
 #. translators: 1: plugin name, 2: action number 3: total number of actions.
 #: inc/tgmpa/class-tgm-plugin-activation.php:3655
+#, php-format
 msgid "Updating Plugin %1$s (%2$d/%3$d)"
 msgstr ""
 
 #. translators: 1: plugin name, 2: error message.
 #: inc/tgmpa/class-tgm-plugin-activation.php:3658
+#, php-format
 msgid "An error occurred while installing %1$s: <strong>%2$s</strong>."
 msgstr ""
 
 #. translators: 1: plugin name.
 #: inc/tgmpa/class-tgm-plugin-activation.php:3660
+#, php-format
 msgid "The installation of %1$s failed."
 msgstr ""
 
@@ -1224,6 +1263,7 @@ msgstr ""
 
 #. translators: 1: plugin name.
 #: inc/tgmpa/class-tgm-plugin-activation.php:3666
+#, php-format
 msgid "%1$s installed and activated successfully."
 msgstr ""
 
@@ -1233,6 +1273,7 @@ msgstr ""
 
 #. translators: 1: plugin name, 2: action number 3: total number of actions.
 #: inc/tgmpa/class-tgm-plugin-activation.php:3669
+#, php-format
 msgid "Installing and Activating Plugin %1$s (%2$d/%3$d)"
 msgstr ""
 
@@ -1242,6 +1283,7 @@ msgstr ""
 
 #. translators: 1: plugin name.
 #: inc/tgmpa/class-tgm-plugin-activation.php:3674
+#, php-format
 msgid "%1$s installed successfully."
 msgstr ""
 
@@ -1251,6 +1293,7 @@ msgstr ""
 
 #. translators: 1: plugin name, 2: action number 3: total number of actions.
 #: inc/tgmpa/class-tgm-plugin-activation.php:3677
+#, php-format
 msgid "Installing Plugin %1$s (%2$d/%3$d)"
 msgstr ""
 
@@ -1263,13 +1306,13 @@ msgid "Hide Details"
 msgstr ""
 
 #: inc/tgmpa/recommended-plugins.php:53
-#: build/dashboard.js:6699
+#: build/dashboard.js:9988
 #: src/pages/UsefulPlugins/index.jsx:7
 msgid "Contact Form 7"
 msgstr ""
 
 #: inc/tgmpa/recommended-plugins.php:58
-#: build/dashboard.js:6703
+#: build/dashboard.js:9992
 #: src/pages/UsefulPlugins/index.jsx:12
 msgid "Rara One Click Demo Import"
 msgstr ""
@@ -1399,6 +1442,7 @@ msgid "Home Page"
 msgstr ""
 
 #: template-parts/content-none.php:19
+#, php-format
 msgid "Ready to publish your first post? <a href=\"%1$s\">Get started here</a>."
 msgstr ""
 
@@ -1419,213 +1463,217 @@ msgstr ""
 #. translators: %s: Name of current post.
 #: template-parts/content-single.php:28
 #: template-parts/content.php:31
+#, php-format
 msgid "Continue reading %s <span class=\"meta-nav\">&rarr;</span>"
 msgstr ""
 
-#: build/dashboard.js:5986
-#: src/components/TabHeader/index.jsx:7
-msgid "View Website"
-msgstr ""
-
-#: build/dashboard.js:5990
-#: src/components/TabHeader/index.jsx:12
-msgid "View Tutorials "
-msgstr ""
-
-#: build/dashboard.js:5994
-#: src/components/TabHeader/index.jsx:17
-msgid "Contact Support"
-msgstr ""
-
-#: build/dashboard.js:5998
-#: src/components/TabHeader/index.jsx:22
-msgid "Docs"
-msgstr ""
-
-#: build/dashboard.js:6058
+#: build/dashboard.js:9285
 #: src/components/Tab/index.jsx:12
 msgid "Preschool And Kindergarten Pro"
 msgstr ""
 
-#: build/dashboard.js:6058
+#: build/dashboard.js:9285
 #: src/components/Tab/index.jsx:13
 msgid "Get access to all unlimited features."
 msgstr ""
 
-#: build/dashboard.js:6062
+#: build/dashboard.js:9289
 #: src/components/Tab/index.jsx:14
 msgid "Get Pro"
 msgstr ""
 
-#: build/dashboard.js:6250
+#: build/dashboard.js:9403
+#: src/components/TabHeader/index.jsx:7
+msgid "View Website"
+msgstr ""
+
+#: build/dashboard.js:9407
+#: src/components/TabHeader/index.jsx:12
+msgid "View Tutorials "
+msgstr ""
+
+#: build/dashboard.js:9411
+#: src/components/TabHeader/index.jsx:17
+msgid "Contact Support"
+msgstr ""
+
+#: build/dashboard.js:9415
+#: src/components/TabHeader/index.jsx:22
+msgid "Docs"
+msgstr ""
+
+#: build/dashboard.js:9539
 #: src/pages/FAQ/index.jsx:8
 msgid "What is the difference between Free and Pro?"
 msgstr ""
 
-#: build/dashboard.js:6251
+#: build/dashboard.js:9540
 #: src/pages/FAQ/index.jsx:12
 msgid "Overall, you will have more control over the customization and editing of your website with the Pro version."
 msgstr ""
 
-#: build/dashboard.js:6253
+#: build/dashboard.js:9542
 #: src/pages/FAQ/index.jsx:17
 msgid "What are the perks of upgrading to the Premium version?"
 msgstr ""
 
-#: build/dashboard.js:6254
+#: build/dashboard.js:9543
 #: src/pages/FAQ/index.jsx:18
 msgid "Along with the additional features and regular updates, you get dedicated and quick support with the premium theme. If you run into any issue while creating a website with the premium theme, you will get a quicker response compared to the free support."
 msgstr ""
 
-#: build/dashboard.js:6256
+#: build/dashboard.js:9545
 #: src/pages/FAQ/index.jsx:21
 msgid "Upgrading to the Pro version- will I lose my changes?"
 msgstr ""
 
-#: build/dashboard.js:6257
+#: build/dashboard.js:9546
 #: src/pages/FAQ/index.jsx:24
 msgid "When you upgrade to the Pro theme, your posts, pages, media, categories, and other data will remain intact-- all your data is saved."
 msgstr ""
 
-#: build/dashboard.js:6257
+#: build/dashboard.js:9546
 #: src/pages/FAQ/index.jsx:25
 msgid "However, since the Pro version comes with added features and settings, you will need to set up the additional features in the customizer. This process is simple and only takes a few minutes."
 msgstr ""
 
-#: build/dashboard.js:6257
+#: build/dashboard.js:9546
 #: src/pages/FAQ/index.jsx:26
 msgid "The Pro version is built with lots of flexibility in mind for future upgrades. Therefore, it is slightly different than the free theme but extremely flexible and easy-to-use."
 msgstr ""
 
-#: build/dashboard.js:6259
+#: build/dashboard.js:9548
 #: src/pages/FAQ/index.jsx:31
 msgid "How do I change the copyright text?"
 msgstr ""
 
-#: build/dashboard.js:6262
+#: build/dashboard.js:9551
 #: src/pages/FAQ/index.jsx:33
+#, js-format
 msgid "You can change the copyright text going to %1$s Appearance > Customize > Footer Settings. %2$s However, if you want to hide the author credit text, please %3$s."
 msgstr ""
 
-#: build/dashboard.js:6266
+#: build/dashboard.js:9555
 #: src/pages/FAQ/index.jsx:37
 msgid "Why is my theme not working well?"
 msgstr ""
 
-#: build/dashboard.js:6267
+#: build/dashboard.js:9556
 #: src/pages/FAQ/index.jsx:40
 msgid "If your customizer is not loading properly or you are having issues with the theme, it might be due to the plugin conflict."
 msgstr ""
 
-#: build/dashboard.js:6269
+#: build/dashboard.js:9558
 #: src/pages/FAQ/index.jsx:41
+#, js-format
 msgid "To solve the issue, deactivate all the plugins first, except the ones recommended by the theme. Then, hard reload your website using %1$s \"Ctrl+Shift+R\" %2$s on Windows and %1$s \"Cmd+Shift+R\" %2$s on Mac. If the issues are fixed, start activating the plugins one by one, and reload and check your site each time. This will help you find out the plugin that is causing the problem."
 msgstr ""
 
-#: build/dashboard.js:6273
+#: build/dashboard.js:9562
 #: src/pages/FAQ/index.jsx:42
-msgid "If this didn't help, please contact us via our %s."
+#, js-format
+msgid "If this didn't help, please contact us via our %s"
 msgstr ""
 
-#: build/dashboard.js:6277
+#: build/dashboard.js:9566
 #: src/pages/FAQ/index.jsx:47
 msgid "How can I solve my issues quickly and get faster support?"
 msgstr ""
 
-#: build/dashboard.js:6278
+#: build/dashboard.js:9567
 #: src/pages/FAQ/index.jsx:50
 msgid "Please ensure that you have updated to the latest version of the theme before you submit a support ticket for any issue. We might have already fixed the bug in the previous theme update."
 msgstr ""
 
-#: build/dashboard.js:6278
+#: build/dashboard.js:9567
 #: src/pages/FAQ/index.jsx:51
 msgid "Also, when you submit the support ticket, please try to provide maximum details so that we can look into your issue in detail and solve it in minimum time. We recommend you to send us a screenshot(s) with issues explained and your website's address (URL). You can contact us "
 msgstr ""
 
-#: build/dashboard.js:6281
+#: build/dashboard.js:9570
 #: src/pages/FAQ/index.jsx:51
 msgid "here."
 msgstr ""
 
-#: build/dashboard.js:6336
-#: build/dashboard.js:6467
+#: build/dashboard.js:9625
+#: build/dashboard.js:9756
 #: src/pages/FreePro/index.jsx:9
 #: src/pages/Home/index.jsx:79
 msgid "We Value Your Feedback!"
 msgstr ""
 
-#: build/dashboard.js:6338
-#: build/dashboard.js:6469
+#: build/dashboard.js:9627
+#: build/dashboard.js:9758
 #: src/pages/FreePro/index.jsx:11
 #: src/pages/Home/index.jsx:81
 msgid "Your review helps us improve and assists others in making informed choices. Share your thoughts today!"
 msgstr ""
 
-#: build/dashboard.js:6342
-#: build/dashboard.js:6473
+#: build/dashboard.js:9631
+#: build/dashboard.js:9762
 #: src/pages/FreePro/index.jsx:13
 #: src/pages/Home/index.jsx:83
 msgid "Leave a Review"
 msgstr ""
 
-#: build/dashboard.js:6345
-#: build/dashboard.js:6476
+#: build/dashboard.js:9634
+#: build/dashboard.js:9765
 #: src/pages/FreePro/index.jsx:17
 #: src/pages/Home/index.jsx:87
 msgid "Knowledge Base"
 msgstr ""
 
-#: build/dashboard.js:6346
-#: build/dashboard.js:6477
+#: build/dashboard.js:9635
+#: build/dashboard.js:9766
 #: src/pages/FreePro/index.jsx:18
 #: src/pages/Home/index.jsx:88
 msgid "Need help using our theme? Visit our well-organized Knowledge Base!"
 msgstr ""
 
-#: build/dashboard.js:6350
-#: build/dashboard.js:6481
+#: build/dashboard.js:9639
+#: build/dashboard.js:9770
 #: src/pages/FreePro/index.jsx:20
 #: src/pages/Home/index.jsx:90
 msgid "Explore"
 msgstr ""
 
-#: build/dashboard.js:6353
-#: build/dashboard.js:6484
+#: build/dashboard.js:9642
+#: build/dashboard.js:9773
 #: src/pages/FreePro/index.jsx:24
 #: src/pages/Home/index.jsx:94
 msgid "Need Assistance? "
 msgstr ""
 
-#: build/dashboard.js:6354
-#: build/dashboard.js:6485
+#: build/dashboard.js:9643
+#: build/dashboard.js:9774
 #: src/pages/FreePro/index.jsx:25
 #: src/pages/Home/index.jsx:95
 msgid "If you need help or have any questions, don't hesitate to contact our support team. We're here to assist you!"
 msgstr ""
 
-#: build/dashboard.js:6358
-#: build/dashboard.js:6489
+#: build/dashboard.js:9647
+#: build/dashboard.js:9778
 #: src/pages/FreePro/index.jsx:27
 #: src/pages/Home/index.jsx:97
 msgid "Submit a Ticket"
 msgstr ""
 
-#: build/dashboard.js:6368
+#: build/dashboard.js:9657
 #: src/pages/FreePro/index.jsx:35
 msgid "Free vs Pro image"
 msgstr ""
 
-#: build/dashboard.js:6401
+#: build/dashboard.js:9690
 #: src/pages/Home/index.jsx:8
 msgid "Site Identity"
 msgstr ""
 
-#: build/dashboard.js:6402
-#: build/dashboard.js:6409
-#: build/dashboard.js:6416
-#: build/dashboard.js:6423
-#: build/dashboard.js:6430
-#: build/dashboard.js:6437
+#: build/dashboard.js:9691
+#: build/dashboard.js:9698
+#: build/dashboard.js:9705
+#: build/dashboard.js:9712
+#: build/dashboard.js:9719
+#: build/dashboard.js:9726
 #: src/pages/Home/index.jsx:9
 #: src/pages/Home/index.jsx:15
 #: src/pages/Home/index.jsx:21
@@ -1635,25 +1683,25 @@ msgstr ""
 msgid "Customize"
 msgstr ""
 
-#: build/dashboard.js:6408
+#: build/dashboard.js:9697
 #: src/pages/Home/index.jsx:14
 msgid "Color Settings"
 msgstr ""
 
-#: build/dashboard.js:6441
+#: build/dashboard.js:9730
 #: src/pages/Home/index.jsx:46
 msgid "Header Layouts"
 msgstr ""
 
-#: build/dashboard.js:6442
+#: build/dashboard.js:9731
 #: src/pages/Home/index.jsx:47
 msgid "Choose from different unique header layouts."
 msgstr ""
 
-#: build/dashboard.js:6443
-#: build/dashboard.js:6453
-#: build/dashboard.js:6458
-#: build/dashboard.js:6463
+#: build/dashboard.js:9732
+#: build/dashboard.js:9742
+#: build/dashboard.js:9747
+#: build/dashboard.js:9752
 #: src/pages/Home/index.jsx:48
 #: src/pages/Home/index.jsx:60
 #: src/pages/Home/index.jsx:66
@@ -1661,169 +1709,170 @@ msgstr ""
 msgid "Learn More"
 msgstr ""
 
-#: build/dashboard.js:6446
+#: build/dashboard.js:9735
 #: src/pages/Home/index.jsx:52
 msgid "Multiple Sidebar"
 msgstr ""
 
-#: build/dashboard.js:6447
+#: build/dashboard.js:9736
 #: src/pages/Home/index.jsx:53
 msgid "Set different sidebars for posts and pages."
 msgstr ""
 
-#: build/dashboard.js:6451
+#: build/dashboard.js:9740
 #: src/pages/Home/index.jsx:58
 msgid "Boost your website performance with ease."
 msgstr ""
 
-#: build/dashboard.js:6452
+#: build/dashboard.js:9741
 #: src/pages/Home/index.jsx:59
 msgid "Performance Settings"
 msgstr ""
 
-#: build/dashboard.js:6456
+#: build/dashboard.js:9745
 #: src/pages/Home/index.jsx:64
 msgid "Choose typography for different heading tags."
 msgstr ""
 
-#: build/dashboard.js:6461
+#: build/dashboard.js:9750
 #: src/pages/Home/index.jsx:70
 msgid "Import the demo content to kickstart your site."
 msgstr ""
 
-#: build/dashboard.js:6462
-#: build/dashboard.js:6659
+#: build/dashboard.js:9751
+#: build/dashboard.js:9948
 #: src/pages/Home/index.jsx:71
 #: src/pages/StarterSites/index.jsx:31
 msgid "One Click Demo Import"
 msgstr ""
 
-#: build/dashboard.js:6497
+#: build/dashboard.js:9786
 #: src/pages/Home/index.jsx:107
 msgid "Quick Customizer Settings"
 msgstr ""
 
-#: build/dashboard.js:6498
-#: build/dashboard.js:6507
+#: build/dashboard.js:9787
+#: build/dashboard.js:9796
 #: src/pages/Home/index.jsx:108
 #: src/pages/Home/index.jsx:119
 msgid "Go To Customizer"
 msgstr ""
 
-#: build/dashboard.js:6506
+#: build/dashboard.js:9795
 #: src/pages/Home/index.jsx:118
 msgid "More features with Pro version"
 msgstr ""
 
-#: build/dashboard.js:6520
+#: build/dashboard.js:9809
 #: src/pages/Home/index.jsx:129
 msgid "Learn more about the Pro version"
 msgstr ""
 
-#: build/dashboard.js:6551
+#: build/dashboard.js:9840
 #: src/pages/Offers/index.jsx:10
 msgid "Theme Club"
 msgstr ""
 
-#: build/dashboard.js:6556
+#: build/dashboard.js:9845
 #: src/pages/Offers/index.jsx:18
 msgid "Theme Installation & Setup"
 msgstr ""
 
-#: build/dashboard.js:6560
+#: build/dashboard.js:9849
 #: src/pages/Offers/index.jsx:23
 msgid "GDPR Compliance"
 msgstr ""
 
-#: build/dashboard.js:6564
+#: build/dashboard.js:9853
 #: src/pages/Offers/index.jsx:28
 msgid "Must Have SEO Setup"
 msgstr ""
 
-#: build/dashboard.js:6568
+#: build/dashboard.js:9857
 #: src/pages/Offers/index.jsx:33
 msgid "Must Have Plugins Setup"
 msgstr ""
 
-#: build/dashboard.js:6572
+#: build/dashboard.js:9861
 #: src/pages/Offers/index.jsx:38
 msgid "VIP Support"
 msgstr ""
 
-#: build/dashboard.js:6631
-#: build/dashboard.js:6641
-#: build/dashboard.js:6651
+#: build/dashboard.js:9920
+#: build/dashboard.js:9930
+#: build/dashboard.js:9940
 #: src/pages/StarterSites/index.jsx:12
 #: src/pages/StarterSites/index.jsx:18
 #: src/pages/StarterSites/index.jsx:24
 msgid "Demo image"
 msgstr ""
 
-#: build/dashboard.js:6636
-#: build/dashboard.js:6646
-#: build/dashboard.js:6656
+#: build/dashboard.js:9925
+#: build/dashboard.js:9935
+#: build/dashboard.js:9945
 #: src/pages/StarterSites/index.jsx:14
 #: src/pages/StarterSites/index.jsx:20
 #: src/pages/StarterSites/index.jsx:26
 msgid "Demo reverse image"
 msgstr ""
 
-#: build/dashboard.js:6661
+#: build/dashboard.js:9950
 #: src/pages/StarterSites/index.jsx:32
+#, js-format
 msgid "Get started effortlessly! Use our one-click demo import feature to set up your site instantly with all the sample data and settings. Please note that importing demo content will overwrite your existing site content and settings. %s Not recommended if you have existing content. %s"
 msgstr ""
 
-#: build/dashboard.js:6669
+#: build/dashboard.js:9958
 #: src/pages/StarterSites/index.jsx:35
 msgid "Get Starter Sites"
 msgstr ""
 
-#: build/dashboard.js:6700
+#: build/dashboard.js:9989
 #: src/pages/UsefulPlugins/index.jsx:8
 msgid "Just another contact form plugin. Simple but flexible."
 msgstr ""
 
-#: build/dashboard.js:6704
+#: build/dashboard.js:9993
 #: src/pages/UsefulPlugins/index.jsx:13
 msgid "Make your website look like the live demo of the theme with a click!"
 msgstr ""
 
-#: build/dashboard.js:6832
+#: build/dashboard.js:10121
 #: src/pages/UsefulPlugins/index.jsx:151
 msgid "Installing..."
 msgstr ""
 
-#: build/dashboard.js:6838
+#: build/dashboard.js:10127
 #: src/pages/UsefulPlugins/index.jsx:161
 msgid "Activating..."
 msgstr ""
 
-#: build/dashboard.js:6841
+#: build/dashboard.js:10130
 #: src/pages/UsefulPlugins/index.jsx:166
 msgid "Activated"
 msgstr ""
 
-#: build/dashboard.js:6887
+#: build/dashboard.js:10176
 #: src/pages/index.js:21
 msgid "Starter Sites"
 msgstr ""
 
-#: build/dashboard.js:6893
+#: build/dashboard.js:10182
 #: src/pages/index.js:26
 msgid "Free vs Pro"
 msgstr ""
 
-#: build/dashboard.js:6899
+#: build/dashboard.js:10188
 #: src/pages/index.js:31
 msgid "Offers"
 msgstr ""
 
-#: build/dashboard.js:6905
+#: build/dashboard.js:10194
 #: src/pages/index.js:36
 msgid "FAQs"
 msgstr ""
 
-#: build/dashboard.js:6911
+#: build/dashboard.js:10200
 #: src/pages/index.js:41
 msgid "Useful Plugins"
 msgstr ""

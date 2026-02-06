@@ -18,21 +18,33 @@ function preschool_and_kindergarten_add_sidebar_layout_box(){
 }
 add_action( 'add_meta_boxes', 'preschool_and_kindergarten_add_sidebar_layout_box' );
 
-$preschool_and_kindergarten_sidebar_layout = array(
-    'right-sidebar' => array(
-        'value'=> 'right-sidebar',
-        'label'=> __( 'Right Sidebar (default)', 'preschool-and-kindergarten'),
-        'thumbnail'=> get_template_directory_uri() . '/images/right-sidebar.png'         
-    ),
-    'no-sidebar' => array(
-        'value' => 'no-sidebar',
-        'label' => __('No Sidebar','preschool-and-kindergarten'),
-        'thumbnail'=> get_template_directory_uri() . '/images/no-sidebar.png'
-    )
-);
+
+/**
+ * Get sidebar layout data.
+ *
+ * @return array
+ */
+if( ! function_exists( 'preschool_and_kindergarten_get_sidebar_layout_data' ) ){
+    function preschool_and_kindergarten_get_sidebar_layout_data(){
+        return array(
+            'right-sidebar' => array(
+                'value'=> 'right-sidebar',
+                'label'=> __( 'Right Sidebar (default)', 'preschool-and-kindergarten'),
+                'thumbnail'=> get_template_directory_uri() . '/images/right-sidebar.png'         
+            ),
+            'no-sidebar' => array(
+                'value' => 'no-sidebar',
+                'label' => __('No Sidebar','preschool-and-kindergarten'),
+                'thumbnail'=> get_template_directory_uri() . '/images/no-sidebar.png'
+            )   
+        );
+    }
+}
+
 
 function preschool_and_kindergarten_sidebar_layout_callback(){
-    global $post, $preschool_and_kindergarten_sidebar_layout;
+    global $post; 
+    $preschool_and_kindergarten_sidebar_layout = preschool_and_kindergarten_get_sidebar_layout_data();
     wp_nonce_field( basename( __FILE__ ), 'preschool_and_kindergarten_nonce' );
 ?>
  
@@ -64,7 +76,8 @@ function preschool_and_kindergarten_sidebar_layout_callback(){
 <?php }
 
 function preschool_and_kindergarten_save_sidebar_layout( $post_id ){
-    global $preschool_and_kindergarten_sidebar_layout;
+    $preschool_and_kindergarten_sidebar_layout = preschool_and_kindergarten_get_sidebar_layout_data();
+
 
     // Verify the nonce before proceeding.
     if( !isset( $_POST[ 'preschool_and_kindergarten_nonce' ] ) || !wp_verify_nonce( $_POST[ 'preschool_and_kindergarten_nonce' ], basename( __FILE__ ) ) )
