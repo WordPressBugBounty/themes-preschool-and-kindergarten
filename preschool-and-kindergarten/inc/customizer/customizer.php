@@ -83,7 +83,7 @@ function preschool_and_kindergarten_customize_scripts() {
     $array = array(
         'ajax_url'   => admin_url( 'admin-ajax.php' ),
     	'flushit'    => __( 'Successfully Flushed!','preschool-and-kindergarten' ),
-    	'nonce'      => wp_create_nonce('ajax-nonce')
+    	'nonce'      => wp_create_nonce('preschool_and_kindergarten_flush_fonts_nonce')
     );
 
     wp_enqueue_style( 'preschool-and-kindergarten-customize-style',get_template_directory_uri().'/inc/css/customize.css', '',PRESCHOOL_AND_KINDERGARTEN_THEME_VERSION );
